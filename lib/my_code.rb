@@ -36,6 +36,16 @@ def reduce_to_all_true(array)
   true
 end 
 
+
+
+
+
+
+
+
+
+
+
 def reduce_to_any_true(array)
    if array.include?("true") 
      return true
