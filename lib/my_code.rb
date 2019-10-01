@@ -30,18 +30,25 @@ end
 # end 
 
 def reduce_to_all_true(array)
-#   if array.include?("nil") || array.include?("false")
-#     return false
-#   end 
-#   true
+  array.each do |ele|
+    if ele == "nil" || ele == "false"
+      return false 
+    end 
+  end 
+ #---------------     
+  if array.include?("nil") || array.include?("false")
+    return false
+  end 
+  true
+end 
+
+#count = 0
+# while count < array.size do
+#   return false if array.include?("nil") || array.include?("false")
+#   count += 1 
 # end 
-count = 0
-while count < array.size do
-  return false if array.include?("nil") || array.include?("false")
-  count += 1 
-end 
-return true
-end 
+# return true
+# end 
 
 
 def reduce_to_any_true(array)
