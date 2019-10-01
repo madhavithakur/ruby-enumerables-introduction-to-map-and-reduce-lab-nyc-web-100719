@@ -40,7 +40,7 @@ while count < array.size do
   return false if array.include?("nil") || array.include?("false")
   count += 1 
 end 
-count
+return true
 end 
 
 
