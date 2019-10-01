@@ -31,7 +31,7 @@ end
 
 def reduce_to_all_true(array)
   array.each do |ele|
-    if ele == "nil" || ele == "false"
+    if ele == false
       return false 
     end 
   end 
