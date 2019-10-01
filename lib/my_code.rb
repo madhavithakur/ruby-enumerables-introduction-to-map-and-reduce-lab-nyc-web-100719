@@ -35,6 +35,8 @@ def reduce_to_all_true(array)
       return false 
     end 
   end 
+  return true 
+end
  #---------------     
 #   if array.include?("nil") || array.include?("false")
 #     return false
