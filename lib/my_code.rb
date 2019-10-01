@@ -30,14 +30,16 @@ end
 # end 
 
 def reduce_to_all_true(array)
-  if array.include?("nil") || array.include?("false")
-    return false
-  end 
-  true
-end 
+#   if array.include?("nil") || array.include?("false")
+#     return false
+#   end 
+#   true
+# end 
 while count < array.size do
   return false if CONDITION 
-  
+  count += 1 
+end 
+count
 
 
 
