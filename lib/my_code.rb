@@ -23,11 +23,11 @@ end
 
 def reduce_to_all_true(array)
   array.each do |ele|
-    if ele == false
-      return false 
+    if ele == true
+      return true
     end 
   end 
-  return true 
+  return false
 end
 
 
