@@ -36,7 +36,7 @@ def reduce_to_all_true(array)
   true
 end 
 while count < array.size do
-  return false fi condition 
+  return false if  condition 
 
 
 
