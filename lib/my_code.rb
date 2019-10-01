@@ -35,7 +35,8 @@ def reduce_to_all_true(array)
   end 
   true
 end 
-while count < array.size
+while count < array.size do
+  
 
 
 
