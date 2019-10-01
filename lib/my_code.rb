@@ -37,7 +37,7 @@ def reduce_to_all_true(array)
 # end 
 count = 0
 while count < array.size do
-  return false if CONDITION 
+  return false if array.include?("nil") || array.include?("false")
   count += 1 
 end 
 count
