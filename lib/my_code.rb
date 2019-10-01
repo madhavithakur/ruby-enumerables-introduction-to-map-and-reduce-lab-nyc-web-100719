@@ -21,14 +21,6 @@ def reduce_to_total(array, starting_point = 0)
   count 
 end 
 
-# def reduce_to_all_true(array)
-#   if !(array.include?("nil")) && !(array.include?("false"))
-#   return true 
-# else
-#   return false
-# end 
-# end 
-
 def reduce_to_all_true(array)
   array.each do |ele|
     if ele == false
@@ -37,29 +29,16 @@ def reduce_to_all_true(array)
   end 
   return true 
 end
- #---------------     
-#   if array.include?("nil") || array.include?("false")
-#     return false
-#   end 
-#   true
-# end 
-
-#count = 0
-# while count < array.size do
-#   return false if array.include?("nil") || array.include?("false")
-#   count += 1 
-# end 
-# return true
-# end 
 
 
 def reduce_to_any_true(array)
-   if array.include?("true") 
-     return true
-   else
-     return false
-   end 
-end 
+   array.each do |ele|
+    if ele == false
+      return false 
+    end 
+  end 
+  return true 
+end
 
 
 
