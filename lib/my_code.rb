@@ -35,6 +35,7 @@ def reduce_to_all_true(array)
 #   end 
 #   true
 # end 
+count = 0
 while count < array.size do
   return false if CONDITION 
   count += 1 
